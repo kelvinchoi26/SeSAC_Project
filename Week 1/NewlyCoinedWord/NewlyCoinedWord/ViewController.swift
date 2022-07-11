@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-    @IBAction func returnKeyClicked(_ sender: UITextField) {
+    @IBAction func returnKeyClicked(_ sender: Any) {
         showSearchResult()
         view.endEditing(true)
     }
