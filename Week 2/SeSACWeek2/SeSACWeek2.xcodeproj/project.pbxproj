@@ -13,6 +13,7 @@
 		1E6BB0A8287BA3F2001CA46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BB0A6287BA3F2001CA46C /* Main.storyboard */; };
 		1E6BB0AA287BA3F3001CA46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BB0A9287BA3F3001CA46C /* Assets.xcassets */; };
 		1E6BB0AD287BA3F3001CA46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BB0AB287BA3F3001CA46C /* LaunchScreen.storyboard */; };
+		1E8CC80A287D2142009F8290 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CC809287D2142009F8290 /* SegmentedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1E6BB0A9287BA3F3001CA46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E6BB0AC287BA3F3001CA46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E6BB0AE287BA3F3001CA46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E8CC809287D2142009F8290 /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1E6BB0A9287BA3F3001CA46C /* Assets.xcassets */,
 				1E6BB0AB287BA3F3001CA46C /* LaunchScreen.storyboard */,
 				1E6BB0AE287BA3F3001CA46C /* Info.plist */,
+				1E8CC809287D2142009F8290 /* SegmentedViewController.swift */,
 			);
 			path = SeSACWeek2;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				1E6BB0A5287BA3F2001CA46C /* ViewController.swift in Sources */,
 				1E6BB0A1287BA3F2001CA46C /* AppDelegate.swift in Sources */,
 				1E6BB0A3287BA3F2001CA46C /* SceneDelegate.swift in Sources */,
+				1E8CC80A287D2142009F8290 /* SegmentedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
