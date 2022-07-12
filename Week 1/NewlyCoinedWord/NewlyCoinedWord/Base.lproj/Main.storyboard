@@ -26,18 +26,21 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system">
+                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="searchButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AfY-d0-crE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fux-OV-IaS">
-                                        <rect key="frame" x="199.5" y="100" width="60.5" height="30"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fux-OV-IaS">
+                                        <rect key="frame" x="175.5" y="100" width="48.5" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="mSm-97-Omi"/>
                                         </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="꾸안꾸"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="윰차"/>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K3T-Lw-5DQ">
                                         <rect key="frame" x="0.0" y="30" width="368.5" height="50"/>
@@ -50,29 +53,32 @@
                                             <action selector="returnKeyClicked:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Iw3-3T-kAp"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAZ-mf-vzd">
-                                        <rect key="frame" x="117" y="100" width="72.5" height="30"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAZ-mf-vzd">
+                                        <rect key="frame" x="117" y="100" width="48.5" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="5PK-CR-WNw"/>
                                         </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="만만잘부"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="새싹"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiJ-wJ-ymt">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiJ-wJ-ymt">
                                         <rect key="frame" x="58.5" y="100" width="48.5" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="VbX-p2-FyT"/>
                                         </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="실매"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="하디"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaw-53-BJF">
                                         <rect key="frame" x="0.0" y="100" width="48.5" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="I1T-It-ESq"/>
                                         </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="윰차"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="안녕"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
