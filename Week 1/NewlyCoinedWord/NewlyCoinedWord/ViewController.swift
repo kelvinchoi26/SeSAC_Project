@@ -7,6 +7,16 @@
 
 import UIKit
 
+enum word: String {
+    case 안녕
+    case 하디
+    case 새싹
+    case 윰차
+    case 실매
+    case 만반잘부
+    case 꾸안꾸
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
@@ -55,37 +65,38 @@ class ViewController: UIViewController {
     func showSearchResult() {
         // 스위치로 구현
         switch textField.text {
-        case "안녕":
+        case word.안녕.rawValue:
             definitionLabel.text = "안녕"
             hashTagArray.removeFirst()
             hashTagArray.append("안녕")
-        case "하디":
+        case word.하디.rawValue:
             definitionLabel.text = "하디"
             hashTagArray.removeFirst()
             hashTagArray.append("하디")
-        case "새싹":
+        case word.새싹.rawValue:
             definitionLabel.text = "새싹"
             hashTagArray.removeFirst()
             hashTagArray.append("새싹")
-        case "윰차":
+        case word.윰차.rawValue:
             definitionLabel.text = "윰차"
             hashTagArray.removeFirst()
             hashTagArray.append("윰차")
-        case "실매":
+        case word.실매.rawValue:
             definitionLabel.text = "실매"
             hashTagArray.removeFirst()
             hashTagArray.append("실매")
-        case "만반잘부":
+        case word.만반잘부.rawValue:
             definitionLabel.text = "만반잘부"
             hashTagArray.removeFirst()
             hashTagArray.append("만반잘부")
-        case "꾸안꾸":
+        case word.꾸안꾸.rawValue:
             definitionLabel.text = "꾸안꾸"
             hashTagArray.removeFirst()
             hashTagArray.append("꾸안꾸")
         default:
             break
         }
+        
         for btn in hashTagBtn {
             btn.setTitle(hashTagArray[btn.tag], for: .normal)
         }
