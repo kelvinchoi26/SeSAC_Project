@@ -215,12 +215,21 @@
                                     <constraint firstItem="GEh-Lq-M7W" firstAttribute="centerX" secondItem="4W7-8P-GoJ" secondAttribute="centerX" id="pA9-F0-Iqm"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdL-ba-bX6">
+                                <rect key="frame" x="173.5" y="705.5" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="resetBtnClicked:" destination="wJ4-Qz-xHN" eventType="touchUpInside" id="dkT-nB-k9D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mDM-Kc-7qb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4W7-8P-GoJ" firstAttribute="height" secondItem="oBC-eo-csE" secondAttribute="height" id="0A2-5t-FpR"/>
                             <constraint firstItem="ovP-tK-0C1" firstAttribute="height" secondItem="oBC-eo-csE" secondAttribute="height" id="AaE-y2-MbS"/>
+                            <constraint firstItem="PdL-ba-bX6" firstAttribute="top" secondItem="oBC-eo-csE" secondAttribute="bottom" constant="60" id="DRU-pe-ihM"/>
                             <constraint firstItem="oBC-eo-csE" firstAttribute="centerY" secondItem="7uq-PE-vKL" secondAttribute="centerY" id="Htq-1i-Yhc"/>
                             <constraint firstItem="4W7-8P-GoJ" firstAttribute="width" secondItem="oBC-eo-csE" secondAttribute="width" id="KJk-2e-dgg"/>
                             <constraint firstItem="ovP-tK-0C1" firstAttribute="centerY" secondItem="oBC-eo-csE" secondAttribute="centerY" id="S35-ve-PUF"/>
@@ -229,10 +238,13 @@
                             <constraint firstItem="oBC-eo-csE" firstAttribute="width" secondItem="7uq-PE-vKL" secondAttribute="width" multiplier="0.25" id="dLq-GU-fcY"/>
                             <constraint firstItem="4W7-8P-GoJ" firstAttribute="centerY" secondItem="oBC-eo-csE" secondAttribute="centerY" id="iRe-HK-GgV"/>
                             <constraint firstItem="ovP-tK-0C1" firstAttribute="width" secondItem="oBC-eo-csE" secondAttribute="width" id="ijD-e4-ANc"/>
+                            <constraint firstItem="PdL-ba-bX6" firstAttribute="centerX" secondItem="7uq-PE-vKL" secondAttribute="centerX" id="ugl-St-qKW"/>
                             <constraint firstItem="oBC-eo-csE" firstAttribute="leading" secondItem="4W7-8P-GoJ" secondAttribute="trailing" constant="15" id="wpJ-Pf-vnQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Njz-gA-cEz"/>
+                    <navigationItem key="navigationItem" id="Njz-gA-cEz">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="list.bullet" catalog="system" id="vyV-gw-Iz7"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="Label0" destination="CdW-tV-IwA" id="bSj-7C-sbD"/>
                         <outlet property="Label1" destination="RAW-9Z-ESa" id="mG9-Re-o6s"/>
@@ -243,6 +255,16 @@
                         <outlet property="Label6" destination="dtH-If-rsH" id="5Hd-Il-b1U"/>
                         <outlet property="Label7" destination="oWa-9c-oZx" id="dVL-Rf-hFG"/>
                         <outlet property="Label8" destination="291-OA-AjU" id="mIY-ww-Qfz"/>
+                        <outlet property="resetBtn" destination="PdL-ba-bX6" id="wxi-gD-72g"/>
+                        <outletCollection property="LabelCollection" destination="CdW-tV-IwA" collectionClass="NSMutableArray" id="vm1-wS-Ecb"/>
+                        <outletCollection property="LabelCollection" destination="RAW-9Z-ESa" collectionClass="NSMutableArray" id="W1G-V0-xQ4"/>
+                        <outletCollection property="LabelCollection" destination="SNK-AT-n9u" collectionClass="NSMutableArray" id="diR-J6-CMn"/>
+                        <outletCollection property="LabelCollection" destination="GEh-Lq-M7W" collectionClass="NSMutableArray" id="uzi-Ph-tEN"/>
+                        <outletCollection property="LabelCollection" destination="u5t-8j-I8E" collectionClass="NSMutableArray" id="8tb-88-R18"/>
+                        <outletCollection property="LabelCollection" destination="YN7-RY-gZx" collectionClass="NSMutableArray" id="NMS-Zq-ZvH"/>
+                        <outletCollection property="LabelCollection" destination="dtH-If-rsH" collectionClass="NSMutableArray" id="ek3-a9-NVW"/>
+                        <outletCollection property="LabelCollection" destination="oWa-9c-oZx" collectionClass="NSMutableArray" id="c5W-Jr-QCt"/>
+                        <outletCollection property="LabelCollection" destination="291-OA-AjU" collectionClass="NSMutableArray" id="WRw-Ko-e2C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETM-WC-ebZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,6 +273,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="sesac_slime1" width="278" height="258"/>
         <image name="sesac_slime2" width="278" height="258"/>
         <image name="sesac_slime3" width="278" height="258"/>

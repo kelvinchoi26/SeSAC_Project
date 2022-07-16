@@ -19,8 +19,12 @@ enum emotion: Int {
     case 나울어
 }
 
+let emotionArrayString = ["행복해", "짜릿해", "사랑해", "짜증나", "당황해", "속상해", "우울해", "심심해", "나울어"]
+
 class ViewController: UIViewController {
     
+    
+    @IBOutlet var LabelCollection: [UILabel]!
     @IBOutlet weak var Label0: UILabel!
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
@@ -31,12 +35,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var Label7: UILabel!
     @IBOutlet weak var Label8: UILabel!
     
+    @IBOutlet weak var resetBtn: UIButton!
+    
     var emotionArray = [0,0,0,0,0,0,0,0,0]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         assignLabelText()
         self.navigationItem.title = "감정 다이어리"
+        designResetBtn()
     }
 
     func assignLabelText() {
@@ -50,17 +57,22 @@ class ViewController: UIViewController {
         Label7.text = "심심해 0"
         Label8.text = "나 울어 0"
         
-        Label0.textAlignment = .center
-        Label1.textAlignment = .center
-        Label2.textAlignment = .center
-        Label3.textAlignment = .center
-        Label4.textAlignment = .center
-        Label5.textAlignment = .center
-        Label6.textAlignment = .center
-        Label7.textAlignment = .center
-        Label8.textAlignment = .center
+        for label in LabelCollection {
+            label.textAlignment = .center
+        }
     }
     
+    func designResetBtn() {
+        resetBtn.setTitle("기분 초기화!", for: .normal)
+    }
+    
+    @IBAction func resetBtnClicked(_ sender: UIButton) {
+        emotionArray = [0,0,0,0,0,0,0,0,0]
+        
+        for i in 0..<LabelCollection.count {
+            LabelCollection[i].text = "\(emotionArrayString[i])" + " 0"
+        }
+    }
     
     @IBAction func emotionClicked(_ sender: UIButton) {
         switch sender.tag {
