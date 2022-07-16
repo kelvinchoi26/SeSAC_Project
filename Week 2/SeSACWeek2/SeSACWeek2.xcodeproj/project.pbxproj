@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5FEA952880E846003BEF69 /* Transition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5FEA942880E846003BEF69 /* Transition.storyboard */; };
+		1E5FEA972880EFCC003BEF69 /* TransitionFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FEA962880EFCC003BEF69 /* TransitionFirstViewController.swift */; };
+		1E5FEA992880FE37003BEF69 /* TransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FEA982880FE37003BEF69 /* TransitionSecondViewController.swift */; };
 		1E6BB0A1287BA3F2001CA46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BB0A0287BA3F2001CA46C /* AppDelegate.swift */; };
 		1E6BB0A3287BA3F2001CA46C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BB0A2287BA3F2001CA46C /* SceneDelegate.swift */; };
 		1E6BB0A5287BA3F2001CA46C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BB0A4287BA3F2001CA46C /* ViewController.swift */; };
@@ -14,9 +17,17 @@
 		1E6BB0AA287BA3F3001CA46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BB0A9287BA3F3001CA46C /* Assets.xcassets */; };
 		1E6BB0AD287BA3F3001CA46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BB0AB287BA3F3001CA46C /* LaunchScreen.storyboard */; };
 		1E8CC80A287D2142009F8290 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CC809287D2142009F8290 /* SegmentedViewController.swift */; };
+		1ED6D5A3287FA956004ECF44 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED6D5A2287FA956004ECF44 /* Setting.storyboard */; };
+		1ED6D5C4287FC217004ECF44 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED6D5C3287FC217004ECF44 /* FSCalendar */; };
+		1ED6D5C7287FC223004ECF44 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED6D5C6287FC223004ECF44 /* TextFieldEffects */; };
+		1ED6D5CA287FC232004ECF44 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED6D5C9287FC232004ECF44 /* SideMenu */; };
+		1ED6D5CC287FC463004ECF44 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6D5CB287FC463004ECF44 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E5FEA942880E846003BEF69 /* Transition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transition.storyboard; sourceTree = "<group>"; };
+		1E5FEA962880EFCC003BEF69 /* TransitionFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionFirstViewController.swift; sourceTree = "<group>"; };
+		1E5FEA982880FE37003BEF69 /* TransitionSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionSecondViewController.swift; sourceTree = "<group>"; };
 		1E6BB09D287BA3F2001CA46C /* SeSACWeek2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACWeek2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6BB0A0287BA3F2001CA46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E6BB0A2287BA3F2001CA46C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +37,8 @@
 		1E6BB0AC287BA3F3001CA46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E6BB0AE287BA3F3001CA46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E8CC809287D2142009F8290 /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
+		1ED6D5A2287FA956004ECF44 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		1ED6D5CB287FC463004ECF44 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +46,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED6D5C4287FC217004ECF44 /* FSCalendar in Frameworks */,
+				1ED6D5CA287FC232004ECF44 /* SideMenu in Frameworks */,
+				1ED6D5C7287FC223004ECF44 /* TextFieldEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E5FEA932880E834003BEF69 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				1E5FEA942880E846003BEF69 /* Transition.storyboard */,
+				1E5FEA962880EFCC003BEF69 /* TransitionFirstViewController.swift */,
+				1E5FEA982880FE37003BEF69 /* TransitionSecondViewController.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
 		1E6BB094287BA3F2001CA46C = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +84,7 @@
 		1E6BB09F287BA3F2001CA46C /* SeSACWeek2 */ = {
 			isa = PBXGroup;
 			children = (
+				1E5FEA932880E834003BEF69 /* Transition */,
 				1E6BB0A0287BA3F2001CA46C /* AppDelegate.swift */,
 				1E6BB0A2287BA3F2001CA46C /* SceneDelegate.swift */,
 				1E6BB0A4287BA3F2001CA46C /* ViewController.swift */,
@@ -66,6 +93,8 @@
 				1E6BB0AB287BA3F3001CA46C /* LaunchScreen.storyboard */,
 				1E6BB0AE287BA3F3001CA46C /* Info.plist */,
 				1E8CC809287D2142009F8290 /* SegmentedViewController.swift */,
+				1ED6D5A2287FA956004ECF44 /* Setting.storyboard */,
+				1ED6D5CB287FC463004ECF44 /* SettingViewController.swift */,
 			);
 			path = SeSACWeek2;
 			sourceTree = "<group>";
@@ -86,6 +115,11 @@
 			dependencies = (
 			);
 			name = SeSACWeek2;
+			packageProductDependencies = (
+				1ED6D5C3287FC217004ECF44 /* FSCalendar */,
+				1ED6D5C6287FC223004ECF44 /* TextFieldEffects */,
+				1ED6D5C9287FC232004ECF44 /* SideMenu */,
+			);
 			productName = SeSACWeek2;
 			productReference = 1E6BB09D287BA3F2001CA46C /* SeSACWeek2.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +148,11 @@
 				Base,
 			);
 			mainGroup = 1E6BB094287BA3F2001CA46C;
+			packageReferences = (
+				1ED6D5C2287FC217004ECF44 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				1ED6D5C5287FC223004ECF44 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				1ED6D5C8287FC232004ECF44 /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
 			productRefGroup = 1E6BB09E287BA3F2001CA46C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -131,6 +170,8 @@
 				1E6BB0AD287BA3F3001CA46C /* LaunchScreen.storyboard in Resources */,
 				1E6BB0AA287BA3F3001CA46C /* Assets.xcassets in Resources */,
 				1E6BB0A8287BA3F2001CA46C /* Main.storyboard in Resources */,
+				1E5FEA952880E846003BEF69 /* Transition.storyboard in Resources */,
+				1ED6D5A3287FA956004ECF44 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED6D5CC287FC463004ECF44 /* SettingViewController.swift in Sources */,
 				1E6BB0A5287BA3F2001CA46C /* ViewController.swift in Sources */,
+				1E5FEA972880EFCC003BEF69 /* TransitionFirstViewController.swift in Sources */,
 				1E6BB0A1287BA3F2001CA46C /* AppDelegate.swift in Sources */,
 				1E6BB0A3287BA3F2001CA46C /* SceneDelegate.swift in Sources */,
+				1E5FEA992880FE37003BEF69 /* TransitionSecondViewController.swift in Sources */,
 				1E8CC80A287D2142009F8290 /* SegmentedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +406,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1ED6D5C2287FC217004ECF44 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		1ED6D5C5287FC223004ECF44 /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		1ED6D5C8287FC232004ECF44 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1ED6D5C3287FC217004ECF44 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ED6D5C2287FC217004ECF44 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		1ED6D5C6287FC223004ECF44 /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ED6D5C5287FC223004ECF44 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		1ED6D5C9287FC232004ECF44 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ED6D5C8287FC232004ECF44 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E6BB095287BA3F2001CA46C /* Project object */;
 }

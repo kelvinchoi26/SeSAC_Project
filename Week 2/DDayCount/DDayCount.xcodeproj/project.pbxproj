@@ -13,6 +13,9 @@
 		1E9599D8287E900F00218E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9599D6287E900F00218E3F /* Main.storyboard */; };
 		1E9599DA287E901000218E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9599D9287E901000218E3F /* Assets.xcassets */; };
 		1E9599DD287E901000218E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9599DB287E901000218E3F /* LaunchScreen.storyboard */; };
+		1ED6D5A9287FAF1E004ECF44 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED6D5A8287FAF1E004ECF44 /* FSCalendar */; };
+		1ED6D5AF287FAFCB004ECF44 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED6D5AE287FAFCB004ECF44 /* TextFieldEffects */; };
+		1ED6D5B2287FB01E004ECF44 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED6D5B1287FB01E004ECF44 /* SideMenu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED6D5AF287FAFCB004ECF44 /* TextFieldEffects in Frameworks */,
+				1ED6D5B2287FB01E004ECF44 /* SideMenu in Frameworks */,
+				1ED6D5A9287FAF1E004ECF44 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = DDayCount;
+			packageProductDependencies = (
+				1ED6D5A8287FAF1E004ECF44 /* FSCalendar */,
+				1ED6D5AE287FAFCB004ECF44 /* TextFieldEffects */,
+				1ED6D5B1287FB01E004ECF44 /* SideMenu */,
+			);
 			productName = DDayCount;
 			productReference = 1E9599CD287E900F00218E3F /* DDayCount.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,11 @@
 				Base,
 			);
 			mainGroup = 1E9599C4287E900E00218E3F;
+			packageReferences = (
+				1ED6D5A7287FAF1E004ECF44 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				1ED6D5AD287FAFCB004ECF44 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				1ED6D5B0287FB01E004ECF44 /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
 			productRefGroup = 1E9599CE287E900F00218E3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,6 +311,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +340,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +376,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1ED6D5A7287FAF1E004ECF44 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		1ED6D5AD287FAFCB004ECF44 /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		1ED6D5B0287FB01E004ECF44 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1ED6D5A8287FAF1E004ECF44 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ED6D5A7287FAF1E004ECF44 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		1ED6D5AE287FAFCB004ECF44 /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ED6D5AD287FAFCB004ECF44 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		1ED6D5B1287FB01E004ECF44 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ED6D5B0287FB01E004ECF44 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E9599C5287E900E00218E3F /* Project object */;
 }
