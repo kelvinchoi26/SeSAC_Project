@@ -13,8 +13,10 @@
 		1EC21C5B2884DDF900AEAF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC21C592884DDF900AEAF1A /* Main.storyboard */; };
 		1EC21C5D2884DDFC00AEAF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC21C5C2884DDFC00AEAF1A /* Assets.xcassets */; };
 		1EC21C602884DDFC00AEAF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC21C5E2884DDFC00AEAF1A /* LaunchScreen.storyboard */; };
-		1EC21C682885077A00AEAF1A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC21C672885077A00AEAF1A /* SettingTableViewController.swift */; };
 		1EC21C6A28858AA500AEAF1A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC21C6928858AA500AEAF1A /* Home.storyboard */; };
+		1EC21C6C2885B9CA00AEAF1A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC21C6B2885B9CA00AEAF1A /* SettingTableViewController.swift */; };
+		1EC21C6E2885C5A800AEAF1A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC21C6D2885C5A800AEAF1A /* Setting.storyboard */; };
+		1EC21C702885C5DE00AEAF1A /* NewSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC21C6F2885C5DE00AEAF1A /* NewSettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		1EC21C5C2884DDFC00AEAF1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EC21C5F2884DDFC00AEAF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EC21C612884DDFC00AEAF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EC21C672885077A00AEAF1A /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		1EC21C6928858AA500AEAF1A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1EC21C6B2885B9CA00AEAF1A /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		1EC21C6D2885C5A800AEAF1A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		1EC21C6F2885C5DE00AEAF1A /* NewSettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +71,10 @@
 				1EC21C5C2884DDFC00AEAF1A /* Assets.xcassets */,
 				1EC21C5E2884DDFC00AEAF1A /* LaunchScreen.storyboard */,
 				1EC21C612884DDFC00AEAF1A /* Info.plist */,
-				1EC21C672885077A00AEAF1A /* SettingTableViewController.swift */,
 				1EC21C6928858AA500AEAF1A /* Home.storyboard */,
+				1EC21C6B2885B9CA00AEAF1A /* SettingTableViewController.swift */,
+				1EC21C6D2885C5A800AEAF1A /* Setting.storyboard */,
+				1EC21C6F2885C5DE00AEAF1A /* NewSettingTableViewController.swift */,
 			);
 			path = TrendMedia;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 			files = (
 				1EC21C602884DDFC00AEAF1A /* LaunchScreen.storyboard in Resources */,
 				1EC21C5D2884DDFC00AEAF1A /* Assets.xcassets in Resources */,
+				1EC21C6E2885C5A800AEAF1A /* Setting.storyboard in Resources */,
 				1EC21C5B2884DDF900AEAF1A /* Main.storyboard in Resources */,
 				1EC21C6A28858AA500AEAF1A /* Home.storyboard in Resources */,
 			);
@@ -145,8 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EC21C682885077A00AEAF1A /* SettingTableViewController.swift in Sources */,
+				1EC21C6C2885B9CA00AEAF1A /* SettingTableViewController.swift in Sources */,
 				1EC21C582884DDF900AEAF1A /* ViewController.swift in Sources */,
+				1EC21C702885C5DE00AEAF1A /* NewSettingTableViewController.swift in Sources */,
 				1EC21C542884DDF900AEAF1A /* AppDelegate.swift in Sources */,
 				1EC21C562884DDF900AEAF1A /* SceneDelegate.swift in Sources */,
 			);
