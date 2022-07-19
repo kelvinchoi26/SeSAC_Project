@@ -14,7 +14,7 @@ class SettingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        tableView.rowHeight = 80
     }
 
     // 섹션의 갯수(옵션)
@@ -55,24 +55,59 @@ class SettingTableViewController: UITableViewController {
     // ex. 카톡 프로필 사진, 상태 메시지 등
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // * 100을 해주는 메서드
-        let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell")!
+        print("cellforrowat", indexPath)
         
-        if indexPath.section == 0 {
-            cell.textLabel?.text = birthdayFriends[indexPath.row]
-            cell.textLabel?.textColor = .systemMint
-            cell.textLabel?.font = .boldSystemFont(ofSize: 20)
-        } else if indexPath.section == 1 {
-            cell.textLabel?.text = "1번 인덱스 텍스트"
-            cell.textLabel?.textColor = .systemPink
-            cell.textLabel?.font = .boldSystemFont(ofSize: 25)
-        } else if indexPath.section == 2 {
+        if indexPath.section == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "rightDetailCell")!
             cell.textLabel?.text = "2번 인덱스 세션의 텍스트"
             cell.textLabel?.textColor = .brown
             cell.textLabel?.font = .boldSystemFont(ofSize: 15)
+            cell.detailTextLabel?.text = "디테일 레이블"
+            
+            // indexPath.row % 2 == 0, 1
+            
+            if indexPath.row % 2 == 0 {
+                cell.imageView?.image = UIImage(systemName: "star")
+                cell.backgroundColor = .lightGray
+            } else {
+                cell.imageView?.image = UIImage(systemName: "star.fill")
+                cell.backgroundColor = .white
+            }
+            
+            // 삼항연산자 활용
+            
+//            cell.imageView?.image = indexPath.row % 2 == 0 ? UIImage(systemName: "star") : UIImage(systemName: "star.fill")
+//            cell.backgroundColor = indexPath.row % 2 == 0 ? .lightGray : .white
+            
+            return cell
+        } else {
+            // * 100을 해주는 메서드
+            let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell")!
+            
+            if indexPath.section == 0 {
+                cell.textLabel?.text = birthdayFriends[indexPath.row]
+                cell.textLabel?.textColor = .systemMint
+                cell.textLabel?.font = .boldSystemFont(ofSize: 20)
+            } else if indexPath.section == 1 {
+                cell.textLabel?.text = "1번 인덱스 텍스트"
+                cell.textLabel?.textColor = .systemPink
+                cell.textLabel?.font = .boldSystemFont(ofSize: 25)
+            } else if indexPath.section == 2 {
+                cell.textLabel?.text = "2번 인덱스 세션의 텍스트"
+                cell.textLabel?.textColor = .brown
+                cell.textLabel?.font = .boldSystemFont(ofSize: 15)
+            }
+            return cell
         }
+    }
+    
+    // 셀의 높이(옵션, 빈도 높은) (feat. tableView.rowHeight)
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        // if indexPath = [0, 0]
+        // if indexPath.section == 0 && indexPath.row == 0
+        // 특정 row 높이 변경할 때 둘 다 가능
         
-        return cell
+        return 44
     }
 }
