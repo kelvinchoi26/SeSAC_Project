@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oME-K7-gvH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shopping Table View Controller-->
+        <scene sceneID="6Wd-3L-uMt">
+            <objects>
+                <tableViewController id="OHi-yD-Gga" customClass="ShoppingTableViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ugB-Mb-mw4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="9fG-uV-AAs">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AdS-Lo-Iki">
+                                    <rect key="frame" x="20" y="11.5" width="374" height="55"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="55" id="tI6-Ni-31s"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="returnActivated:" destination="OHi-yD-Gga" eventType="editingDidEndOnExit" id="nQU-7h-ANv"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWz-1D-lcH">
+                                    <rect key="frame" x="333.5" y="25" width="48.5" height="31"/>
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                    <color key="tintColor" systemColor="labelColor"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="tinted" title="추가"/>
+                                    <connections>
+                                        <action selector="addBtnClicked:" destination="OHi-yD-Gga" eventType="touchUpInside" id="lUt-yP-Y4Y"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="AdS-Lo-Iki" firstAttribute="centerY" secondItem="9fG-uV-AAs" secondAttribute="centerY" id="9aH-DG-6Nk"/>
+                                <constraint firstItem="AdS-Lo-Iki" firstAttribute="leading" secondItem="9fG-uV-AAs" secondAttribute="leading" constant="20" id="Ruh-IB-Dw4"/>
+                                <constraint firstItem="VWz-1D-lcH" firstAttribute="top" secondItem="9fG-uV-AAs" secondAttribute="top" constant="25" id="ln6-q1-aI1"/>
+                                <constraint firstAttribute="trailing" secondItem="VWz-1D-lcH" secondAttribute="trailing" constant="32" id="vF6-hq-E1q"/>
+                                <constraint firstAttribute="trailing" secondItem="AdS-Lo-Iki" secondAttribute="trailing" constant="20" id="yIp-56-Ztq"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingTableViewCell" id="Zc1-qT-KUE" customClass="ShoppingTableViewCell" customModule="TrendMedia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="122.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zc1-qT-KUE" id="gER-Yc-NyJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c46-Rc-04P">
+                                            <rect key="frame" x="20" y="7" width="46" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="checkmark.square.fill" catalog="system"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULE-BY-gXW">
+                                            <rect key="frame" x="95" y="12" width="232" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWE-bh-uGd">
+                                            <rect key="frame" x="347" y="7" width="47" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system"/>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <outlet property="cellLabel" destination="ULE-BY-gXW" id="sxz-df-s0z"/>
+                                    <outlet property="checkBoxBtn" destination="c46-Rc-04P" id="fKn-mw-3Pe"/>
+                                    <outlet property="favoriteBtn" destination="MWE-bh-uGd" id="cJZ-Xl-vlR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OHi-yD-Gga" id="rd2-zR-jTY"/>
+                            <outlet property="delegate" destination="OHi-yD-Gga" id="Ued-rq-Nxi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="j1I-wy-XhA"/>
+                    <connections>
+                        <outlet property="textField" destination="AdS-Lo-Iki" id="6Pd-B4-T2T"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8yL-iJ-bDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.86956521739137" y="-557.14285714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ffJ-3p-zOP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oME-K7-gvH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TVq-cQ-XRR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OHi-yD-Gga" kind="relationship" relationship="rootViewController" id="bKl-kz-dUl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Syz-Tw-5WO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149.27536231884059" y="-557.14285714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
