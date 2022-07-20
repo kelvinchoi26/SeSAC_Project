@@ -31,6 +31,12 @@
 		1ECE82CA28870AFF0006A913 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECE82C928870AFF0006A913 /* Search.storyboard */; };
 		1ECE82CC28870DE80006A913 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE82CB28870DE80006A913 /* SearchTableViewCell.swift */; };
 		1ECE82CE28870DF70006A913 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE82CD28870DF70006A913 /* SearchTableViewController.swift */; };
+		1EE53D1528878CD900401D84 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE53D1428878CD900401D84 /* Movie.swift */; };
+		1EE53D172887933200401D84 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE53D162887933200401D84 /* MovieInfo.swift */; };
+		1EE53D1928879AA400401D84 /* RecommendCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE53D1828879AA400401D84 /* RecommendCollectionViewController.swift */; };
+		1EE53D1B28879DFB00401D84 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE53D1A28879DFB00401D84 /* RecommendCollectionViewCell.swift */; };
+		1EE53D1E2887AE8700401D84 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1EE53D1D2887AE8700401D84 /* Kingfisher */; };
+		1EE53D212887AE9700401D84 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 1EE53D202887AE9700401D84 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,10 @@
 		1ECE82C928870AFF0006A913 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		1ECE82CB28870DE80006A913 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		1ECE82CD28870DF70006A913 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		1EE53D1428878CD900401D84 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1EE53D162887933200401D84 /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		1EE53D1828879AA400401D84 /* RecommendCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewController.swift; sourceTree = "<group>"; };
+		1EE53D1A28879DFB00401D84 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE53D212887AE9700401D84 /* Toast in Frameworks */,
+				1EE53D1E2887AE8700401D84 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +116,8 @@
 				1EC21C6D2885C5A800AEAF1A /* Setting.storyboard */,
 				1EC21C6F2885C5DE00AEAF1A /* NewSettingTableViewController.swift */,
 				1EA97D312886403F00C7A41F /* Trend.storyboard */,
+				1EE53D1A28879DFB00401D84 /* RecommendCollectionViewCell.swift */,
+				1EE53D1828879AA400401D84 /* RecommendCollectionViewController.swift */,
 				1E51636728864D9C00D8444E /* BucketListTableViewCell.swift */,
 				1E51636528864B9B00D8444E /* BucketListTableViewController.swift */,
 				1EA97D332886407900C7A41F /* Intro.storyboard */,
@@ -117,6 +131,8 @@
 				1ECE82C928870AFF0006A913 /* Search.storyboard */,
 				1ECE82CB28870DE80006A913 /* SearchTableViewCell.swift */,
 				1ECE82CD28870DF70006A913 /* SearchTableViewController.swift */,
+				1EE53D1428878CD900401D84 /* Movie.swift */,
+				1EE53D162887933200401D84 /* MovieInfo.swift */,
 			);
 			path = TrendMedia;
 			sourceTree = "<group>";
@@ -137,6 +153,10 @@
 			dependencies = (
 			);
 			name = TrendMedia;
+			packageProductDependencies = (
+				1EE53D1D2887AE8700401D84 /* Kingfisher */,
+				1EE53D202887AE9700401D84 /* Toast */,
+			);
 			productName = TrendMedia;
 			productReference = 1EC21C502884DDF900AEAF1A /* TrendMedia.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +185,10 @@
 				Base,
 			);
 			mainGroup = 1EC21C472884DDF900AEAF1A;
+			packageReferences = (
+				1EE53D1C2887AE8700401D84 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1EE53D1F2887AE9600401D84 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 1EC21C512884DDF900AEAF1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -198,16 +222,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE53D172887933200401D84 /* MovieInfo.swift in Sources */,
+				1EE53D1928879AA400401D84 /* RecommendCollectionViewController.swift in Sources */,
 				1E5163642886478B00D8444E /* UITextField+Extension.swift in Sources */,
 				1ECE82C82886FDE60006A913 /* ShoppingTableViewCell.swift in Sources */,
 				1ECE82C62886FC410006A913 /* ShoppingTableViewController.swift in Sources */,
 				1E51636828864D9C00D8444E /* BucketListTableViewCell.swift in Sources */,
 				1E51636628864B9B00D8444E /* BucketListTableViewController.swift in Sources */,
 				1E5163622886451A00D8444E /* UIViewController+Extension.swift in Sources */,
+				1EE53D1528878CD900401D84 /* Movie.swift in Sources */,
 				1EC21C6C2885B9CA00AEAF1A /* SettingTableViewController.swift in Sources */,
 				1ECE82CE28870DF70006A913 /* SearchTableViewController.swift in Sources */,
 				1E5163602886442500D8444E /* SearchViewController.swift in Sources */,
 				1EC21C582884DDF900AEAF1A /* ViewController.swift in Sources */,
+				1EE53D1B28879DFB00401D84 /* RecommendCollectionViewCell.swift in Sources */,
 				1EC21C702885C5DE00AEAF1A /* NewSettingTableViewController.swift in Sources */,
 				1EC21C542884DDF900AEAF1A /* AppDelegate.swift in Sources */,
 				1E51635E2886440F00D8444E /* TrendViewController.swift in Sources */,
@@ -430,6 +458,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1EE53D1C2887AE8700401D84 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		1EE53D1F2887AE9600401D84 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1EE53D1D2887AE8700401D84 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EE53D1C2887AE8700401D84 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		1EE53D202887AE9700401D84 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EE53D1F2887AE9600401D84 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1EC21C482884DDF900AEAF1A /* Project object */;
 }

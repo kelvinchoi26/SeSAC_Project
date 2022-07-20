@@ -9,11 +9,13 @@ import UIKit
 
 class SearchTableViewController: UITableViewController {
 
-    var movieName = ["영화1", "영화2", "영화3", "영화4", "영화5", "영화6", "영화7", "영화8", "영화9", "영화10"]
+    var movieList = MovieInfo()
+    
+//    ["영화1", "영화2", "영화3", "영화4", "영화5", "영화6", "영화7", "영화8", "영화9", "영화10"]
     
     var releaseDate = ["날짜1", "날짜2", "날짜3", "날짜4", "날짜5", "날짜6", "날짜7", "날짜8", "날짜9", "날짜10"]
     
-    var summary = ["fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawe faew"]
+    var summary = ["fsdffadsffadsfasdf ewrafdsasefa ew aweawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf", "fsdffadsffadsfasdf ewrafdsasefa ew awe eawefaewasldjflkjaslkdjfkjasjdkjflasjdljflkjasdlkjflkjasdlkjflajsdlkflaksjdfljalksdjkfljlkasjdf"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +25,14 @@ class SearchTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return movieName.count
+        return movieList.movie.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchTableViewCell", for: indexPath) as! SearchTableViewCell
 
-        cell.movieNameLabel.text = movieName[indexPath.row]
-        cell.releaseDateLabel.text = releaseDate[indexPath.row]
-        cell.summaryLabel.text = summary[indexPath.row]
+        let data = movieList.movie[indexPath.row]
+        cell.configureCell(data: data)
         
         return cell
     }
