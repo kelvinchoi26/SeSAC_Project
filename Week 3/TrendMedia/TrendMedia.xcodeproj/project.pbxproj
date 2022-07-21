@@ -13,6 +13,7 @@
 		1E5163642886478B00D8444E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5163632886478B00D8444E /* UITextField+Extension.swift */; };
 		1E51636628864B9B00D8444E /* BucketListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51636528864B9B00D8444E /* BucketListTableViewController.swift */; };
 		1E51636828864D9C00D8444E /* BucketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51636728864D9C00D8444E /* BucketListTableViewCell.swift */; };
+		1E61A3112888E744000644A6 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61A3102888E744000644A6 /* TrendTableViewController.swift */; };
 		1EA97D322886403F00C7A41F /* Trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA97D312886403F00C7A41F /* Trend.storyboard */; };
 		1EA97D342886407900C7A41F /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA97D332886407900C7A41F /* Intro.storyboard */; };
 		1EC21C542884DDF900AEAF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC21C532884DDF900AEAF1A /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		1E5163632886478B00D8444E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		1E51636528864B9B00D8444E /* BucketListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewController.swift; sourceTree = "<group>"; };
 		1E51636728864D9C00D8444E /* BucketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewCell.swift; sourceTree = "<group>"; };
+		1E61A3102888E744000644A6 /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
 		1EA97D312886403F00C7A41F /* Trend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trend.storyboard; sourceTree = "<group>"; };
 		1EA97D332886407900C7A41F /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		1EC21C502884DDF900AEAF1A /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +87,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E65400F2888DA9B00F4C5D5 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1E51635F2886442500D8444E /* SearchViewController.swift */,
+				1ECE82C928870AFF0006A913 /* Search.storyboard */,
+				1ECE82CB28870DE80006A913 /* SearchTableViewCell.swift */,
+				1ECE82CD28870DF70006A913 /* SearchTableViewController.swift */,
+				1EE53D1428878CD900401D84 /* Movie.swift */,
+				1EE53D162887933200401D84 /* MovieInfo.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		1E6540102888DAF000F4C5D5 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				1EC21C6D2885C5A800AEAF1A /* Setting.storyboard */,
+				1EC21C6B2885B9CA00AEAF1A /* SettingTableViewController.swift */,
+				1EC21C6F2885C5DE00AEAF1A /* NewSettingTableViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		1E6540112888E5B900F4C5D5 /* Trend */ = {
+			isa = PBXGroup;
+			children = (
+				1EA97D312886403F00C7A41F /* Trend.storyboard */,
+				1E51635D2886440F00D8444E /* TrendViewController.swift */,
+				1EE53D1A28879DFB00401D84 /* RecommendCollectionViewCell.swift */,
+				1EE53D1828879AA400401D84 /* RecommendCollectionViewController.swift */,
+				1E51636728864D9C00D8444E /* BucketListTableViewCell.swift */,
+				1E51636528864B9B00D8444E /* BucketListTableViewController.swift */,
+			);
+			path = Trend;
+			sourceTree = "<group>";
+		};
 		1EC21C472884DDF900AEAF1A = {
 			isa = PBXGroup;
 			children = (
+				1E61A3102888E744000644A6 /* TrendTableViewController.swift */,
 				1EC21C522884DDF900AEAF1A /* TrendMedia */,
 				1EC21C512884DDF900AEAF1A /* Products */,
 			);
@@ -104,6 +143,9 @@
 		1EC21C522884DDF900AEAF1A /* TrendMedia */ = {
 			isa = PBXGroup;
 			children = (
+				1E6540112888E5B900F4C5D5 /* Trend */,
+				1E6540102888DAF000F4C5D5 /* Setting */,
+				1E65400F2888DA9B00F4C5D5 /* Search */,
 				1EC21C532884DDF900AEAF1A /* AppDelegate.swift */,
 				1EC21C552884DDF900AEAF1A /* SceneDelegate.swift */,
 				1EC21C572884DDF900AEAF1A /* ViewController.swift */,
@@ -112,27 +154,12 @@
 				1EC21C5E2884DDFC00AEAF1A /* LaunchScreen.storyboard */,
 				1EC21C612884DDFC00AEAF1A /* Info.plist */,
 				1EC21C6928858AA500AEAF1A /* Home.storyboard */,
-				1EC21C6B2885B9CA00AEAF1A /* SettingTableViewController.swift */,
-				1EC21C6D2885C5A800AEAF1A /* Setting.storyboard */,
-				1EC21C6F2885C5DE00AEAF1A /* NewSettingTableViewController.swift */,
-				1EA97D312886403F00C7A41F /* Trend.storyboard */,
-				1EE53D1A28879DFB00401D84 /* RecommendCollectionViewCell.swift */,
-				1EE53D1828879AA400401D84 /* RecommendCollectionViewController.swift */,
-				1E51636728864D9C00D8444E /* BucketListTableViewCell.swift */,
-				1E51636528864B9B00D8444E /* BucketListTableViewController.swift */,
 				1EA97D332886407900C7A41F /* Intro.storyboard */,
-				1E51635D2886440F00D8444E /* TrendViewController.swift */,
-				1E51635F2886442500D8444E /* SearchViewController.swift */,
 				1E5163612886451A00D8444E /* UIViewController+Extension.swift */,
 				1E5163632886478B00D8444E /* UITextField+Extension.swift */,
 				1ECE82C32886D95D0006A913 /* Shopping.storyboard */,
 				1ECE82C52886FC410006A913 /* ShoppingTableViewController.swift */,
 				1ECE82C72886FDE60006A913 /* ShoppingTableViewCell.swift */,
-				1ECE82C928870AFF0006A913 /* Search.storyboard */,
-				1ECE82CB28870DE80006A913 /* SearchTableViewCell.swift */,
-				1ECE82CD28870DF70006A913 /* SearchTableViewController.swift */,
-				1EE53D1428878CD900401D84 /* Movie.swift */,
-				1EE53D162887933200401D84 /* MovieInfo.swift */,
 			);
 			path = TrendMedia;
 			sourceTree = "<group>";
@@ -231,6 +258,7 @@
 				1E51636628864B9B00D8444E /* BucketListTableViewController.swift in Sources */,
 				1E5163622886451A00D8444E /* UIViewController+Extension.swift in Sources */,
 				1EE53D1528878CD900401D84 /* Movie.swift in Sources */,
+				1E61A3112888E744000644A6 /* TrendTableViewController.swift in Sources */,
 				1EC21C6C2885B9CA00AEAF1A /* SettingTableViewController.swift in Sources */,
 				1ECE82CE28870DF70006A913 /* SearchTableViewController.swift in Sources */,
 				1E5163602886442500D8444E /* SearchViewController.swift in Sources */,

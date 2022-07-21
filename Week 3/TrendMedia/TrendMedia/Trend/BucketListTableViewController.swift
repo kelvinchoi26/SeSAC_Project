@@ -8,6 +8,8 @@
 import UIKit
 
 class BucketListTableViewController: UITableViewController {
+    
+    static let identifier = "BucketListTableViewController"
 
     @IBOutlet weak var userTextField: UITextField!
     
@@ -15,16 +17,38 @@ class BucketListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = "버킷리스트"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
+        
         tableView.rowHeight = 80
         
         list.append("마녀")
     }
 
+    // objc로 구현된 메서드일 때 @ 사용해줘야함
+    @objc func closeButtonClicked() {
+        self.dismiss(animated: true)
+    }
+    
     @IBAction func enterKeyClicked(_ sender: UITextField) {
-        list.append(sender.text!)
+        // case 2. if let
+        if let value = sender.text?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty, (2...6).contains(value.count) {
+            list.append(value)
+        } else {
+            // 토스트 메시지 띄우기
+        }
         
+        // case 3. guard 구문
+//        guard let value = sender.text?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty, (2...6).contains(value.count) else {
+//            // 토스트 메시지
+//        }
+//
+//        list.append(value)
+        
+        // case 1.
+        // list.append(sender.text!
         // 데이터가 바뀌는 순간마다 테이블뷰 갱신
-        tableView.reloadData()
+        // tableView.reloadData() //중요!
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

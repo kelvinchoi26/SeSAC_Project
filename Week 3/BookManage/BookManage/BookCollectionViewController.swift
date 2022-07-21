@@ -21,6 +21,8 @@ class BookCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonClicked))
+        
         // 컬렉션뷰의 셀 크기, 셀 사이 간격 등 설정
         let layout = UICollectionViewFlowLayout()
         // FlowLayout!
@@ -35,7 +37,17 @@ class BookCollectionViewController: UICollectionViewController {
         
         collectionView.collectionViewLayout = layout
     }
-
+                                                            
+    // objc로 구현된 메서드일 때 @ 사용해줘야함
+    @objc func searchButtonClicked() {
+        let sb = UIStoryboard(name: "Search", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+        // 네비게이션 포함 풀스크린
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true)
+    }
+                                                            
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return movieList.movie.count
@@ -54,36 +66,11 @@ class BookCollectionViewController: UICollectionViewController {
         cell.layer.cornerRadius = 5
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    */
-
 }

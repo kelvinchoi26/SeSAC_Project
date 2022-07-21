@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E61A3132889A02C000644A6 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E61A3122889A02C000644A6 /* Search.storyboard */; };
+		1E61A3152889A3D4000644A6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61A3142889A3D4000644A6 /* SearchViewController.swift */; };
+		1E61A3172889B756000644A6 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E61A3162889B756000644A6 /* Detail.storyboard */; };
+		1E61A3192889B760000644A6 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E61A3182889B760000644A6 /* WebView.storyboard */; };
+		1E61A31B2889B7B7000644A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61A31A2889B7B7000644A6 /* DetailViewController.swift */; };
+		1E61A31D2889B7E2000644A6 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61A31C2889B7E2000644A6 /* WebViewViewController.swift */; };
 		1E653FF1288844C800F4C5D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E653FF0288844C800F4C5D5 /* AppDelegate.swift */; };
 		1E653FF3288844C800F4C5D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E653FF2288844C800F4C5D5 /* SceneDelegate.swift */; };
 		1E653FF5288844C800F4C5D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E653FF4288844C800F4C5D5 /* ViewController.swift */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E61A3122889A02C000644A6 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		1E61A3142889A3D4000644A6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1E61A3162889B756000644A6 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		1E61A3182889B760000644A6 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		1E61A31A2889B7B7000644A6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1E61A31C2889B7E2000644A6 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		1E653FED288844C800F4C5D5 /* BookManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E653FF0288844C800F4C5D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E653FF2288844C800F4C5D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +89,12 @@
 				1E65400628884AF000F4C5D5 /* BookCollectionViewCell.swift */,
 				1E65400828884B0100F4C5D5 /* BookCollectionViewController.swift */,
 				1E65400A288855AC00F4C5D5 /* Movie.swift */,
+				1E61A3122889A02C000644A6 /* Search.storyboard */,
+				1E61A3142889A3D4000644A6 /* SearchViewController.swift */,
+				1E61A3162889B756000644A6 /* Detail.storyboard */,
+				1E61A3182889B760000644A6 /* WebView.storyboard */,
+				1E61A31A2889B7B7000644A6 /* DetailViewController.swift */,
+				1E61A31C2889B7E2000644A6 /* WebViewViewController.swift */,
 			);
 			path = BookManage;
 			sourceTree = "<group>";
@@ -147,6 +165,9 @@
 			files = (
 				1E653FFD288844CB00F4C5D5 /* LaunchScreen.storyboard in Resources */,
 				1E653FFA288844CB00F4C5D5 /* Assets.xcassets in Resources */,
+				1E61A3132889A02C000644A6 /* Search.storyboard in Resources */,
+				1E61A3172889B756000644A6 /* Detail.storyboard in Resources */,
+				1E61A3192889B760000644A6 /* WebView.storyboard in Resources */,
 				1E653FF8288844C800F4C5D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E61A31D2889B7E2000644A6 /* WebViewViewController.swift in Sources */,
+				1E61A31B2889B7B7000644A6 /* DetailViewController.swift in Sources */,
 				1E65400B288855AC00F4C5D5 /* Movie.swift in Sources */,
 				1E653FF5288844C800F4C5D5 /* ViewController.swift in Sources */,
+				1E61A3152889A3D4000644A6 /* SearchViewController.swift in Sources */,
 				1E653FF1288844C800F4C5D5 /* AppDelegate.swift in Sources */,
 				1E65400528884AD500F4C5D5 /* MovieInfo.swift in Sources */,
 				1E65400728884AF000F4C5D5 /* BookCollectionViewCell.swift in Sources */,
