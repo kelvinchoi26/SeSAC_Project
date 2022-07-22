@@ -10,12 +10,19 @@ import UIKit
 class BucketListTableViewController: UITableViewController {
     
     static let identifier = "BucketListTableViewController"
+    
+    // 1. 값 전달 받기 위한 공간
+    var textfieldPlaceholder = ""
 
     @IBOutlet weak var userTextField: UITextField!
     
     var list = ["범죄도시2", "토르", "탑컨"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 3. 값 전달
+        userTextField.text = ""
+        userTextField.placeholder = textfieldPlaceholder
 
         navigationItem.title = "버킷리스트"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))

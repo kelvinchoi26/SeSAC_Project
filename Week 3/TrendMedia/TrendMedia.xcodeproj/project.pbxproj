@@ -14,6 +14,7 @@
 		1E51636628864B9B00D8444E /* BucketListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51636528864B9B00D8444E /* BucketListTableViewController.swift */; };
 		1E51636828864D9C00D8444E /* BucketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51636728864D9C00D8444E /* BucketListTableViewCell.swift */; };
 		1E61A3112888E744000644A6 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61A3102888E744000644A6 /* TrendTableViewController.swift */; };
+		1E61A31F288A3FAB000644A6 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61A31E288A3FAB000644A6 /* NewViewController.swift */; };
 		1EA97D322886403F00C7A41F /* Trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA97D312886403F00C7A41F /* Trend.storyboard */; };
 		1EA97D342886407900C7A41F /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA97D332886407900C7A41F /* Intro.storyboard */; };
 		1EC21C542884DDF900AEAF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC21C532884DDF900AEAF1A /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		1E51636528864B9B00D8444E /* BucketListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewController.swift; sourceTree = "<group>"; };
 		1E51636728864D9C00D8444E /* BucketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewCell.swift; sourceTree = "<group>"; };
 		1E61A3102888E744000644A6 /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
+		1E61A31E288A3FAB000644A6 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		1EA97D312886403F00C7A41F /* Trend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trend.storyboard; sourceTree = "<group>"; };
 		1EA97D332886407900C7A41F /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		1EC21C502884DDF900AEAF1A /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,10 +117,12 @@
 			children = (
 				1EA97D312886403F00C7A41F /* Trend.storyboard */,
 				1E51635D2886440F00D8444E /* TrendViewController.swift */,
+				1E61A3102888E744000644A6 /* TrendTableViewController.swift */,
 				1EE53D1A28879DFB00401D84 /* RecommendCollectionViewCell.swift */,
 				1EE53D1828879AA400401D84 /* RecommendCollectionViewController.swift */,
 				1E51636728864D9C00D8444E /* BucketListTableViewCell.swift */,
 				1E51636528864B9B00D8444E /* BucketListTableViewController.swift */,
+				1E61A31E288A3FAB000644A6 /* NewViewController.swift */,
 			);
 			path = Trend;
 			sourceTree = "<group>";
@@ -126,7 +130,6 @@
 		1EC21C472884DDF900AEAF1A = {
 			isa = PBXGroup;
 			children = (
-				1E61A3102888E744000644A6 /* TrendTableViewController.swift */,
 				1EC21C522884DDF900AEAF1A /* TrendMedia */,
 				1EC21C512884DDF900AEAF1A /* Products */,
 			);
@@ -258,6 +261,7 @@
 				1E51636628864B9B00D8444E /* BucketListTableViewController.swift in Sources */,
 				1E5163622886451A00D8444E /* UIViewController+Extension.swift in Sources */,
 				1EE53D1528878CD900401D84 /* Movie.swift in Sources */,
+				1E61A31F288A3FAB000644A6 /* NewViewController.swift in Sources */,
 				1E61A3112888E744000644A6 /* TrendTableViewController.swift in Sources */,
 				1EC21C6C2885B9CA00AEAF1A /* SettingTableViewController.swift in Sources */,
 				1ECE82CE28870DF70006A913 /* SearchTableViewController.swift in Sources */,
